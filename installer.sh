@@ -37,8 +37,8 @@ sudo apt install -y python-software-properties
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 sudo apt install -y php7.2-fpm php7.2-gd php7.2-imap php7.2-mbstring php7.2-json
-sudo apt install php7.2-ldap php7.2-curl php7.2-xml php7.2-zip php7.2-mysql php7.2-dev
-sudo apt install php-mailparse php-pear phpunit php-db
+sudo apt install -y php7.2-ldap php7.2-curl php7.2-xml php7.2-zip php7.2-mysql php7.2-dev
+sudo apt install -y php-mailparse php-pear phpunit php-db
 
 if [ -f "$(which composer)" ]; then
   composer install -o
