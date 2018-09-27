@@ -1,5 +1,8 @@
-if [ $(python -c "f = open('/etc/issue'); print (f.read().split(' ', 1)[0])") != 'Ubuntu' ]; then
-  echo "Expecting Ubuntu OS. Please do the work around because apt install is not available in non-debian OS"
+if [ ! -f $(which apt) ]; then
+  echo "Expecting apt. Please do the work around because apt is not available in non-debian OS.";
+  echo "Use brew for mac";
+  echo "Use apk for alpine";
+  echo "Use yum for Fedora";
   exit
 fi
 
