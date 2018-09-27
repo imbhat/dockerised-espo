@@ -1,3 +1,8 @@
+if [ $(python -c "f = open('/etc/issue'); print (f.read().split(' ', 1)[0])") != 'Ubuntu' ]; then
+  echo "Expecting Ubuntu OS. Please do the work around because apt install is not available in non-debian OS"
+  exit
+fi
+
 if [ ! -f "$(which docker)" ]; then
   echo "docker not found. Install docker first ..."
   exit
