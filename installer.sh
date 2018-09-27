@@ -7,7 +7,7 @@ if [ ! -f $(which apt) ]; then
 fi
 
 if [ ! -f "$(which docker)" ]; then
-  echo "docker not found. Install docker first ..."
+  echo "docker not found. Install docker first ... \nSee https://docs.docker.com/install/"
   exit
 fi
 
