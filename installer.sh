@@ -8,6 +8,8 @@ if [ ! -f "$(which docker-compose)" ]; then
   sudo apt install docker-compose
 fi
 
+sudo apt install git
+
 export WORKDIR=$HOME/dockerised-espo
 mkdir -p $WORKDIR
 
