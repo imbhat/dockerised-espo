@@ -1,13 +1,13 @@
-# dockerised-espo
+# EspoCRM dockerised
 Dockerised version of espocrm
 
-# Installation for production
+## Installation for production
 
 - Clone this repository: `git clone git://github.com/theBuzzyCoder/dockerised-espo.git $HOME/dockerised-espo`
 - Build and run for the first time: `docker-compose -f $HOME/dockerised-espo/docker-compose.yml -p $HOME/dockerised-espo up -d --build`
 - Second time onwards: `docker-compose -f $HOME/dockerised-espo/docker-compose.yml -p $HOME/dockerised-espo up -d`
 
-# Installation for Development
+## Installation for Development
 
 **NOTE: Do not clone this repository. Follow Below Setups and it will automatically clone the repository**
 
@@ -26,7 +26,7 @@ Finally run
 #### From second time onwards!
 `docker-compose up -d`
 
-# See Nginx or PHP-FPM Logs
+## See Nginx or PHP-FPM Logs
 
 Note: containerId is just a place holder
 `docker container logs <containerId>`
