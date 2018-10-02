@@ -16,7 +16,7 @@ Finally run
 
 #### During first docker compose up. This will build the image
 
-`docker-compose -f docker-compose.development.yml -p dockerised-espo up -d --build`
+`docker-compose -f dockerised-espo/docker-compose.development.yml -p dockerised-espo up -d --build`
 
 #### From second time onwards!
 `docker-compose up -d`
